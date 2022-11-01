@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: "/tmp/actions-runner/_work/directory-react-nodejs/directory-react-nodejs/package-lock.json"
+        cache-dependency-path: "./directory-react-nodejs/package-lock.json"
     - run: npm install
     - run: node server
 
